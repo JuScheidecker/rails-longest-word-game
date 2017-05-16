@@ -1,0 +1,14 @@
+<h1>Longestwords#score</h1>
+<p>Find me in app/views/longestwords/score.html.erb</p>
+
+<p>Your longest word is: <%= @word %>  </p>
+<p><%= @word %> is an existing English word which means '<%= @result %>' in French</p> <br/>
+
+<%= @word_letters %>
+
+<p> your longest word letters count: <%= @word_letters_count %>  </p> <br/> <br/>
+<p> initial grid letters count  <%= @grid_letters_count %> </p>
+
+<%= @message %> <br/> <br/> <br/>
+
+<%= link_to "Would you like to play again?", game_path %>

@@ -1,0 +1,14 @@
+<h1>Longestwords#game</h1>
+
+<p>Find the longest words based on the following grid</p>
+<%= @grid %>
+
+<form action="/score" method="post">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <input type="hidden" name="grid" value="<%= @grid %>"> <br/>
+  <label for="question">What is your longest word you idiot? </label>
+  <input type="text" id="input" name="word" placeholder="your longest word">
+  <input type="submit" value="Valider">
+</form>
+
+<p>Find me in app/views/longestwords/game.html.erb</p>
